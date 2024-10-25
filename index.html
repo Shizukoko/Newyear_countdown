@@ -31,20 +31,18 @@
                 <span class="label">Seconds</span>
             </div>
         </div>
-        <button id="resolution-button" class="resolution-button">Share Your Resolution!</button>
-        <div id="resolution-modal" class="modal">
-            <div class="modal-content">
-                <span class="close-button">&times;</span>
-                <h2>Your New Year Resolution</h2>
-                <textarea id="resolution-input" placeholder="What are your resolutions for the new year?"></textarea>
-                <button id="submit-resolution">Submit</button>
-                <p id="resolution-message"></p>
-            </div>
+        <div class="progress-container">
+            <div id="progress-bar"></div>
         </div>
+        <button id="theme-button" class="theme-button">Switch to Dark Mode</button>
+        <div id="greeting-message" class="greeting-message"></div>
+        <div class="quote" id="quote"></div>
         <div class="footer">
             <p>Stay tuned for the celebration!</p>
         </div>
     </div>
+
+    <audio id="celebration-sound" src="celebration.mp3"></audio> <!-- Add a sound file -->
 
     <script src="script.js"></script>
 </body>
