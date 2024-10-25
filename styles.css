@@ -1,63 +1,118 @@
 body {
-    font-family: 'Quicksand', sans-serif; /* Fun font */
-    background: url('https://as2.ftcdn.net/v2/jpg/05/91/04/67/1000_F_591046776_RMMg2XnSSUImhL7s5w6jcbKW8bND6qJt.jpg') no-repeat center center fixed; /* Set background image */
-    background-size: cover; /* Cover the entire area */
-    color: #fff; /* White text */
+    font-family: 'Quicksand', sans-serif; /* Fun and clean font */
+    background: url('https://example.com/your-background.jpg') no-repeat center center fixed; /* Replace with your own URL */
+    background-size: cover;
+    color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
     margin: 0;
     text-align: center;
+    overflow: hidden;
+    transition: background 0.5s ease;
 }
 
 .container {
-    padding: 20px; /* Padding for spacing */
-    border-radius: 10px; /* Rounded corners */
-    background: rgba(0, 0, 0, 0.6); /* Dark background for contrast */
+    padding: 15px; /* Reduced padding */
+    border-radius: 10px; /* Slightly smaller radius */
+    background: rgba(0, 0, 0, 0.7);
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    position: relative;
+    overflow: hidden;
 }
 
 .countdown-title {
-    font-size: 2rem; /* Size for the title */
-    margin-bottom: 10px; /* Space below title */
-    color: #ff4081; /* Title color */
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    font-size: 2rem; /* Further reduced size */
+    margin-bottom: 5px; /* Reduced margin */
+    font-family: 'Pacifico', cursive; /* Stylish font for title */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    color: #ff4081; /* Pink color for title */
 }
 
 .countdown-description {
-    font-size: 1rem; /* Description size */
-    margin-bottom: 15px; /* Space below description */
-    color: #ffcc00; /* Bright color for description */
+    font-size: 1rem; /* Further reduced size */
+    margin-bottom: 15px; /* Reduced margin */
+    color: #ffcc00; /* Bright gold for description */
 }
 
 .countdown {
     display: flex;
     justify-content: center;
-    gap: 5px; /* Space between countdown elements */
-    margin: 10px 0; /* Margin for spacing */
+    gap: 10px; /* Maintain gap */
+    margin: 10px 0; /* Maintain margin */
 }
 
 .time {
-    background: rgba(255, 255, 255, 0.3); /* Light background for time */
-    border-radius: 8px; /* Rounded corners */
-    padding: 5px; /* Padding for elements */
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 8px; /* Slightly smaller radius */
+    padding: 10px 5px; /* Further reduced padding */
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s, background 0.3s;
+    min-width: 60px; /* Reduced minimum width */
 }
 
 .time:hover {
-    transform: scale(1.05); /* Grow on hover */
-    background: rgba(255, 255, 255, 0.5); /* Lighter background on hover */
+    transform: scale(1.05); /* Slightly smaller scale on hover */
+    background: rgba(255, 255, 255, 0.4);
 }
 
 .number {
-    font-size: 1.5rem; /* Number size */
-    font-weight: bold; /* Bold text */
+    font-size: 1.5rem; /* Further reduced size */
+    font-weight: bold;
+    display: block;
     color: #4caf50; /* Green color for numbers */
 }
 
 .label {
-    font-size: 0.7rem; /* Smaller label size */
-    text-transform: uppercase; /* Uppercase labels */
-    color: #ffcc00; /* Label color */
+    font-size: 0.8rem; /* Further reduced size */
+    text-transform: uppercase;
+    color: #ffcc00; /* Bright gold for labels */
+}
+
+.progress-container {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    margin: 10px 0; /* Maintain margin */
+    height: 10px; /* Further reduced height */
+}
+
+#progress-bar {
+    height: 100%;
+    width: 0;
+    background-color: #ff5722; /* Vibrant orange */
+    border-radius: 5px;
+}
+
+.theme-button {
+    margin-top: 15px; /* Reduced margin */
+    padding: 8px 12px; /* Reduced padding */
+    font-size: 1rem; /* Maintain size */
+    background-color: #2196f3; /* Bright blue */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.theme-button:hover {
+    background-color: #1976d2; /* Darker blue on hover */
+}
+
+.greeting-message {
+    margin-top: 10px; /* Maintain margin */
+    font-size: 1rem; /* Reduced size */
+    color: #ffcc00; /* Bright gold for greeting */
+    display: none; /* Initially hidden */
+}
+
+.quote {
+    font-size: 0.9rem; /* Further reduced size */
+    margin-top: 10px; /* Reduced margin */
+    color: #ffffff;
+    font-style: italic;
 }
