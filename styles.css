@@ -14,7 +14,7 @@ body {
 }
 
 .container {
-    padding: 15px; /* Reduced padding */
+    padding: 10px; /* Further reduced padding */
     border-radius: 10px; /* Slightly smaller radius */
     background: rgba(0, 0, 0, 0.7);
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
@@ -24,7 +24,7 @@ body {
 }
 
 .countdown-title {
-    font-size: 2rem; /* Further reduced size */
+    font-size: 1.5rem; /* Further reduced size */
     margin-bottom: 5px; /* Reduced margin */
     font-family: 'Pacifico', cursive; /* Stylish font for title */
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
@@ -32,26 +32,26 @@ body {
 }
 
 .countdown-description {
-    font-size: 1rem; /* Further reduced size */
-    margin-bottom: 15px; /* Reduced margin */
+    font-size: 0.9rem; /* Further reduced size */
+    margin-bottom: 10px; /* Reduced margin */
     color: #ffcc00; /* Bright gold for description */
 }
 
 .countdown {
     display: flex;
     justify-content: center;
-    gap: 10px; /* Maintain gap */
-    margin: 10px 0; /* Maintain margin */
+    gap: 5px; /* Reduced gap */
+    margin: 5px 0; /* Reduced margin */
 }
 
 .time {
     background: rgba(255, 255, 255, 0.2);
     border-radius: 8px; /* Slightly smaller radius */
-    padding: 10px 5px; /* Further reduced padding */
+    padding: 8px 4px; /* Further reduced padding */
     backdrop-filter: blur(10px);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s, background 0.3s;
-    min-width: 60px; /* Reduced minimum width */
+    min-width: 50px; /* Reduced minimum width */
 }
 
 .time:hover {
@@ -60,14 +60,14 @@ body {
 }
 
 .number {
-    font-size: 1.5rem; /* Further reduced size */
+    font-size: 1.2rem; /* Further reduced size */
     font-weight: bold;
     display: block;
     color: #4caf50; /* Green color for numbers */
 }
 
 .label {
-    font-size: 0.8rem; /* Further reduced size */
+    font-size: 0.7rem; /* Further reduced size */
     text-transform: uppercase;
     color: #ffcc00; /* Bright gold for labels */
 }
@@ -76,8 +76,8 @@ body {
     width: 100%;
     background: rgba(255, 255, 255, 0.2);
     border-radius: 5px;
-    margin: 10px 0; /* Maintain margin */
-    height: 10px; /* Further reduced height */
+    margin: 5px 0; /* Reduced margin */
+    height: 8px; /* Further reduced height */
 }
 
 #progress-bar {
@@ -88,9 +88,9 @@ body {
 }
 
 .theme-button {
-    margin-top: 15px; /* Reduced margin */
-    padding: 8px 12px; /* Reduced padding */
-    font-size: 1rem; /* Maintain size */
+    margin-top: 10px; /* Reduced margin */
+    padding: 5px 8px; /* Reduced padding */
+    font-size: 0.9rem; /* Maintain size */
     background-color: #2196f3; /* Bright blue */
     color: #fff;
     border: none;
@@ -104,15 +104,15 @@ body {
 }
 
 .greeting-message {
-    margin-top: 10px; /* Maintain margin */
-    font-size: 1rem; /* Reduced size */
+    margin-top: 5px; /* Reduced margin */
+    font-size: 0.9rem; /* Reduced size */
     color: #ffcc00; /* Bright gold for greeting */
     display: none; /* Initially hidden */
 }
 
 .quote {
-    font-size: 0.9rem; /* Further reduced size */
-    margin-top: 10px; /* Reduced margin */
+    font-size: 0.8rem; /* Further reduced size */
+    margin-top: 5px; /* Reduced margin */
     color: #ffffff;
     font-style: italic;
 }
