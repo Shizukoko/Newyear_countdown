@@ -1,7 +1,7 @@
 body {
     font-family: 'Quicksand', sans-serif; /* Fun and clean font */
-    background: url('https://example.com/your-background.jpg') no-repeat center center fixed; /* Replace with your own URL */
-    background-size: cover;
+    background: url('https://as2.ftcdn.net/v2/jpg/05/91/04/67/1000_F_591046776_RMMg2XnSSUImhL7s5w6jcbKW8bND6qJt.jpg') no-repeat center center fixed; /* Background image */
+    background-size: cover; /* Ensure the background covers the entire area */
     color: #fff;
     display: flex;
     align-items: center;
@@ -10,13 +10,12 @@ body {
     margin: 0;
     text-align: center;
     overflow: hidden;
-    transition: background 0.5s ease;
 }
 
 .container {
-    padding: 10px; /* Further reduced padding */
+    padding: 20px; /* Increase padding for better spacing */
     border-radius: 10px; /* Slightly smaller radius */
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.6); /* More transparent to enhance background visibility */
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(10px);
     position: relative;
@@ -24,50 +23,50 @@ body {
 }
 
 .countdown-title {
-    font-size: 1.5rem; /* Further reduced size */
-    margin-bottom: 5px; /* Reduced margin */
+    font-size: 2rem; /* Slightly larger for better visibility */
+    margin-bottom: 10px; /* Increased margin for spacing */
     font-family: 'Pacifico', cursive; /* Stylish font for title */
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
     color: #ff4081; /* Pink color for title */
 }
 
 .countdown-description {
-    font-size: 0.9rem; /* Further reduced size */
-    margin-bottom: 10px; /* Reduced margin */
+    font-size: 1.2rem; /* Slightly larger for better visibility */
+    margin-bottom: 15px; /* Increased margin for spacing */
     color: #ffcc00; /* Bright gold for description */
 }
 
 .countdown {
     display: flex;
     justify-content: center;
-    gap: 5px; /* Reduced gap */
-    margin: 5px 0; /* Reduced margin */
+    gap: 10px; /* Increased gap for better spacing */
+    margin: 10px 0; /* Increased margin for better spacing */
 }
 
 .time {
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 8px; /* Slightly smaller radius */
-    padding: 8px 4px; /* Further reduced padding */
-    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.3); /* Light background for time blocks */
+    border-radius: 10px; /* Slightly larger radius for buttons */
+    padding: 5px; /* Reduced padding for compactness */
+    backdrop-filter: blur(5px); /* Added blur for a subtle effect */
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s, background 0.3s;
-    min-width: 50px; /* Reduced minimum width */
+    min-width: 40px; /* Reduced minimum width for compactness */
 }
 
 .time:hover {
-    transform: scale(1.05); /* Slightly smaller scale on hover */
-    background: rgba(255, 255, 255, 0.4);
+    transform: scale(1.05); /* Scale up on hover for interactivity */
+    background: rgba(255, 255, 255, 0.5); /* Slightly lighter on hover */
 }
 
 .number {
-    font-size: 1.2rem; /* Further reduced size */
+    font-size: 1.2rem; /* Adjusted size for better visibility */
     font-weight: bold;
     display: block;
     color: #4caf50; /* Green color for numbers */
 }
 
 .label {
-    font-size: 0.7rem; /* Further reduced size */
+    font-size: 0.7rem; /* Smaller for better visibility */
     text-transform: uppercase;
     color: #ffcc00; /* Bright gold for labels */
 }
@@ -76,8 +75,8 @@ body {
     width: 100%;
     background: rgba(255, 255, 255, 0.2);
     border-radius: 5px;
-    margin: 5px 0; /* Reduced margin */
-    height: 8px; /* Further reduced height */
+    margin: 10px 0; /* Increased margin for better spacing */
+    height: 10px; /* Slightly increased height */
 }
 
 #progress-bar {
@@ -88,9 +87,9 @@ body {
 }
 
 .theme-button {
-    margin-top: 10px; /* Reduced margin */
+    margin-top: 15px; /* Increased margin for better spacing */
     padding: 5px 8px; /* Reduced padding */
-    font-size: 0.9rem; /* Maintain size */
+    font-size: 1rem; /* Maintain size */
     background-color: #2196f3; /* Bright blue */
     color: #fff;
     border: none;
@@ -104,14 +103,14 @@ body {
 }
 
 .greeting-message {
-    margin-top: 5px; /* Reduced margin */
-    font-size: 0.9rem; /* Reduced size */
+    margin-top: 10px; /* Increased margin for better spacing */
+    font-size: 1rem; /* Increased size for better visibility */
     color: #ffcc00; /* Bright gold for greeting */
     display: none; /* Initially hidden */
 }
 
 .quote {
-    font-size: 0.8rem; /* Further reduced size */
+    font-size: 0.9rem; /* Slightly larger for better visibility */
     margin-top: 5px; /* Reduced margin */
     color: #ffffff;
     font-style: italic;
