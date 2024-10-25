@@ -1,7 +1,7 @@
 body {
-    font-family: 'Quicksand', sans-serif; /* Fun and clean font */
-    background: url('https://as2.ftcdn.net/v2/jpg/05/91/04/67/1000_F_591046776_RMMg2XnSSUImhL7s5w6jcbKW8bND6qJt.jpg') no-repeat center center fixed; /* Replace with your own URL */
-    background-size: cover;
+    font-family: 'Arial', sans-serif;
+    background: url('https://example.com/your-background.jpg') no-repeat center center fixed; /* Replace with your own URL */
+    background-size: cover; /* Ensures the background covers the entire viewport */
     color: #fff;
     display: flex;
     align-items: center;
@@ -14,8 +14,8 @@ body {
 }
 
 .container {
-    padding: 15px; /* Reduced padding */
-    border-radius: 10px; /* Slightly smaller radius */
+    padding: 30px;
+    border-radius: 15px;
     background: rgba(0, 0, 0, 0.7);
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(10px);
@@ -24,60 +24,58 @@ body {
 }
 
 .countdown-title {
-    font-size: 2rem; /* Further reduced size */
-    margin-bottom: 5px; /* Reduced margin */
-    font-family: 'Pacifico', cursive; /* Stylish font for title */
+    font-size: 3rem;
+    margin-bottom: 10px;
+    font-family: 'Pacifico', cursive;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
-    color: #ff4081; /* Pink color for title */
 }
 
 .countdown-description {
-    font-size: 1rem; /* Further reduced size */
-    margin-bottom: 15px; /* Reduced margin */
-    color: #ffcc00; /* Bright gold for description */
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #ffeb3b; /* A bright complementary color for the description */
 }
 
 .countdown {
     display: flex;
     justify-content: center;
-    gap: 10px; /* Maintain gap */
-    margin: 10px 0; /* Maintain margin */
+    gap: 30px;
+    margin: 20px 0;
 }
 
 .time {
     background: rgba(255, 255, 255, 0.2);
-    border-radius: 8px; /* Slightly smaller radius */
-    padding: 10px 5px; /* Further reduced padding */
+    border-radius: 10px;
+    padding: 30px 20px;
     backdrop-filter: blur(10px);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s, background 0.3s;
-    min-width: 60px; /* Reduced minimum width */
 }
 
 .time:hover {
-    transform: scale(1.05); /* Slightly smaller scale on hover */
+    transform: scale(1.1);
     background: rgba(255, 255, 255, 0.4);
 }
 
 .number {
-    font-size: 1.5rem; /* Further reduced size */
+    font-size: 3rem;
     font-weight: bold;
     display: block;
-    color: #4caf50; /* Green color for numbers */
+    color: #ffffff; /* Changed to white */
 }
 
 .label {
-    font-size: 0.8rem; /* Further reduced size */
+    font-size: 1.2rem;
     text-transform: uppercase;
-    color: #ffcc00; /* Bright gold for labels */
+    color: #ffeb3b; /* Maintain contrast with white numbers */
 }
 
 .progress-container {
     width: 100%;
     background: rgba(255, 255, 255, 0.2);
     border-radius: 5px;
-    margin: 10px 0; /* Maintain margin */
-    height: 10px; /* Further reduced height */
+    margin: 20px 0;
+    height: 20px;
 }
 
 #progress-bar {
@@ -88,10 +86,10 @@ body {
 }
 
 .theme-button {
-    margin-top: 15px; /* Reduced margin */
-    padding: 8px 12px; /* Reduced padding */
-    font-size: 1rem; /* Maintain size */
-    background-color: #2196f3; /* Bright blue */
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: #4caf50; /* A calming green */
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -100,19 +98,21 @@ body {
 }
 
 .theme-button:hover {
-    background-color: #1976d2; /* Darker blue on hover */
+    background-color: #388e3c; /* Darker shade on hover */
 }
 
 .greeting-message {
-    margin-top: 10px; /* Maintain margin */
-    font-size: 1rem; /* Reduced size */
-    color: #ffcc00; /* Bright gold for greeting */
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: #ffeb3b;
     display: none; /* Initially hidden */
 }
 
 .quote {
-    font-size: 0.9rem; /* Further reduced size */
-    margin-top: 10px; /* Reduced margin */
+    font-size: 1.2rem;
+    margin-top: 20px;
     color: #ffffff;
     font-style: italic;
 }
+
+/* Note: Removed dark mode styles */
