@@ -1,7 +1,7 @@
 body {
-    font-family: 'Arial', sans-serif;
-    background: url('https://as2.ftcdn.net/v2/jpg/05/91/04/67/1000_F_591046776_RMMg2XnSSUImhL7s5w6jcbKW8bND6qJt.jpg') no-repeat center center fixed; /* Replace with your own URL */
-    background-size: cover; /* Ensures the background covers the entire viewport */
+    font-family: 'Quicksand', sans-serif; /* Fun and clean font */
+    background: url('https://example.com/your-background.jpg') no-repeat center center fixed; /* Replace with your own URL */
+    background-size: cover;
     color: #fff;
     display: flex;
     align-items: center;
@@ -26,30 +26,32 @@ body {
 .countdown-title {
     font-size: 3rem;
     margin-bottom: 10px;
-    font-family: 'Pacifico', cursive;
+    font-family: 'Pacifico', cursive; /* Stylish font for title */
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    color: #ff4081; /* Pink color for title */
 }
 
 .countdown-description {
     font-size: 1.5rem;
     margin-bottom: 20px;
-    color: #ffeb3b; /* A bright complementary color for the description */
+    color: #ffcc00; /* Bright gold for description */
 }
 
 .countdown {
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 20px; /* Reduced gap for compactness */
     margin: 20px 0;
 }
 
 .time {
     background: rgba(255, 255, 255, 0.2);
     border-radius: 10px;
-    padding: 30px 20px;
+    padding: 20px 15px; /* Reduced padding for smaller size */
     backdrop-filter: blur(10px);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s, background 0.3s;
+    min-width: 80px; /* Ensuring minimum width for the boxes */
 }
 
 .time:hover {
@@ -58,16 +60,16 @@ body {
 }
 
 .number {
-    font-size: 3rem;
+    font-size: 2.5rem; /* Made smaller */
     font-weight: bold;
     display: block;
-    color: #ffffff; /* Changed to white */
+    color: #4caf50; /* Green color for numbers */
 }
 
 .label {
-    font-size: 1.2rem;
+    font-size: 1rem; /* Made smaller */
     text-transform: uppercase;
-    color: #ffeb3b; /* Maintain contrast with white numbers */
+    color: #ffcc00; /* Bright gold for labels */
 }
 
 .progress-container {
@@ -89,7 +91,7 @@ body {
     margin-top: 20px;
     padding: 10px 20px;
     font-size: 1.2rem;
-    background-color: #4caf50; /* A calming green */
+    background-color: #2196f3; /* Bright blue */
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -98,13 +100,13 @@ body {
 }
 
 .theme-button:hover {
-    background-color: #388e3c; /* Darker shade on hover */
+    background-color: #1976d2; /* Darker blue on hover */
 }
 
 .greeting-message {
     margin-top: 20px;
     font-size: 1.5rem;
-    color: #ffeb3b;
+    color: #ffcc00; /* Bright gold for greeting */
     display: none; /* Initially hidden */
 }
 
@@ -113,22 +115,4 @@ body {
     margin-top: 20px;
     color: #ffffff;
     font-style: italic;
-}
-
-/* Dark Mode Styles */
-body.dark-mode {
-    background: #1a1a1a;
-    color: #fff;
-}
-
-body.dark-mode .container {
-    background: rgba(255, 255, 255, 0.2);
-}
-
-body.dark-mode .theme-button {
-    background-color: #4caf50; /* Green for light mode */
-}
-
-body.dark-mode .theme-button:hover {
-    background-color: #45a049; /* Darker green on hover */
 }
