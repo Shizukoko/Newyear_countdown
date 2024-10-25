@@ -14,8 +14,8 @@ body {
 }
 
 .container {
-    padding: 20px; /* Reduced padding */
-    border-radius: 15px;
+    padding: 15px; /* Reduced padding */
+    border-radius: 10px; /* Slightly smaller radius */
     background: rgba(0, 0, 0, 0.7);
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(10px);
@@ -24,50 +24,50 @@ body {
 }
 
 .countdown-title {
-    font-size: 2.5rem; /* Reduced size */
-    margin-bottom: 10px;
+    font-size: 2rem; /* Further reduced size */
+    margin-bottom: 5px; /* Reduced margin */
     font-family: 'Pacifico', cursive; /* Stylish font for title */
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
     color: #ff4081; /* Pink color for title */
 }
 
 .countdown-description {
-    font-size: 1.2rem; /* Reduced size */
-    margin-bottom: 20px;
+    font-size: 1rem; /* Further reduced size */
+    margin-bottom: 15px; /* Reduced margin */
     color: #ffcc00; /* Bright gold for description */
 }
 
 .countdown {
     display: flex;
     justify-content: center;
-    gap: 10px; /* Reduced gap for compactness */
-    margin: 10px 0; /* Reduced margin */
+    gap: 10px; /* Maintain gap */
+    margin: 10px 0; /* Maintain margin */
 }
 
 .time {
     background: rgba(255, 255, 255, 0.2);
-    border-radius: 10px;
-    padding: 15px 10px; /* Reduced padding */
+    border-radius: 8px; /* Slightly smaller radius */
+    padding: 10px 5px; /* Further reduced padding */
     backdrop-filter: blur(10px);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s, background 0.3s;
-    min-width: 70px; /* Ensuring minimum width for the boxes */
+    min-width: 60px; /* Reduced minimum width */
 }
 
 .time:hover {
-    transform: scale(1.1);
+    transform: scale(1.05); /* Slightly smaller scale on hover */
     background: rgba(255, 255, 255, 0.4);
 }
 
 .number {
-    font-size: 2rem; /* Made smaller */
+    font-size: 1.5rem; /* Further reduced size */
     font-weight: bold;
     display: block;
     color: #4caf50; /* Green color for numbers */
 }
 
 .label {
-    font-size: 0.9rem; /* Made smaller */
+    font-size: 0.8rem; /* Further reduced size */
     text-transform: uppercase;
     color: #ffcc00; /* Bright gold for labels */
 }
@@ -76,8 +76,8 @@ body {
     width: 100%;
     background: rgba(255, 255, 255, 0.2);
     border-radius: 5px;
-    margin: 10px 0; /* Reduced margin */
-    height: 15px; /* Reduced height */
+    margin: 10px 0; /* Maintain margin */
+    height: 10px; /* Further reduced height */
 }
 
 #progress-bar {
@@ -88,9 +88,9 @@ body {
 }
 
 .theme-button {
-    margin-top: 20px;
-    padding: 8px 15px; /* Reduced padding */
-    font-size: 1rem; /* Made smaller */
+    margin-top: 15px; /* Reduced margin */
+    padding: 8px 12px; /* Reduced padding */
+    font-size: 1rem; /* Maintain size */
     background-color: #2196f3; /* Bright blue */
     color: #fff;
     border: none;
@@ -104,14 +104,14 @@ body {
 }
 
 .greeting-message {
-    margin-top: 10px; /* Reduced margin */
-    font-size: 1.2rem; /* Made smaller */
+    margin-top: 10px; /* Maintain margin */
+    font-size: 1rem; /* Reduced size */
     color: #ffcc00; /* Bright gold for greeting */
     display: none; /* Initially hidden */
 }
 
 .quote {
-    font-size: 1rem; /* Made smaller */
+    font-size: 0.9rem; /* Further reduced size */
     margin-top: 10px; /* Reduced margin */
     color: #ffffff;
     font-style: italic;
