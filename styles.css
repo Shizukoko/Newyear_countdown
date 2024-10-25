@@ -1,7 +1,7 @@
 body {
     font-family: 'Arial', sans-serif;
-    background: url('YOUR_BACKGROUND_IMAGE_URL') no-repeat center center fixed; /* Add a background image */
-    background-size: cover;
+    background: url('https://example.com/your-background.jpg') no-repeat center center fixed; /* Replace with your own URL */
+    background-size: cover; /* Ensures the background covers the entire viewport */
     color: #fff;
     display: flex;
     align-items: center;
@@ -19,6 +19,8 @@ body {
     background: rgba(0, 0, 0, 0.7);
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(10px);
+    position: relative;
+    overflow: hidden;
 }
 
 .countdown-title {
@@ -31,7 +33,7 @@ body {
 .countdown-description {
     font-size: 1.5rem;
     margin-bottom: 20px;
-    color: #ffeb3b;
+    color: #ffeb3b; /* A bright complementary color for the description */
 }
 
 .countdown {
@@ -59,20 +61,35 @@ body {
     font-size: 3rem;
     font-weight: bold;
     display: block;
-    color: #ffeb3b;
+    color: #ffffff; /* Changed to white */
 }
 
 .label {
     font-size: 1.2rem;
     text-transform: uppercase;
-    color: #fff;
+    color: #ffeb3b; /* Maintain contrast with white numbers */
 }
 
-.resolution-button {
+.progress-container {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    margin: 20px 0;
+    height: 20px;
+}
+
+#progress-bar {
+    height: 100%;
+    width: 0;
+    background-color: #ff5722; /* Vibrant orange */
+    border-radius: 5px;
+}
+
+.theme-button {
     margin-top: 20px;
     padding: 10px 20px;
     font-size: 1.2rem;
-    background-color: #ff5722; /* A vibrant button color */
+    background-color: #4caf50; /* A calming green */
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -80,93 +97,38 @@ body {
     transition: background 0.3s;
 }
 
-.resolution-button:hover {
-    background-color: #e64a19; /* Darker shade on hover */
+.theme-button:hover {
+    background-color: #388e3c; /* Darker shade on hover */
 }
 
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1000;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.7);
-    padding-top: 60px;
+.greeting-message {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: #ffeb3b;
+    display: none; /* Initially hidden */
 }
 
-.modal-content {
-    background-color: #fefefe;
-    margin: 5% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-    border-radius: 10px;
+.quote {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    color: #ffffff;
+    font-style: italic;
 }
 
-.close-button {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
+/* Dark Mode Styles */
+body.dark-mode {
+    background: #1a1a1a;
+    color: #fff;
 }
 
-.close-button:hover,
-.close-button:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
+body.dark-mode .container {
+    background: rgba(255, 255, 255, 0.2);
 }
 
-textarea {
-    width: 100%;
-    height: 100px;
-    margin-top: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    padding: 10px;
+body.dark-mode .theme-button {
+    background-color: #4caf50; /* Green for light mode */
 }
 
-#submit-resolution {
-    background-color: #4CAF50; /* Green */
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin-top: 10px;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-#submit-resolution:hover {
-    background-color: #45a049;
-}
-
-#resolution-message {
-    margin-top: 10px;
-}
-
-/* Confetti Effect */
-.confetti {
-    position: absolute;
-    bottom: 100%;
-    width: 10px;
-    height: 10px;
-    opacity: 0.8;
-    animation: fall linear forwards;
-}
-
-@keyframes fall {
-    0% {
-        transform: translateY(0);
-    }
-    100% {
-        transform: translateY(100vh) rotate(360deg);
-        opacity: 0;
-    }
+body.dark-mode .theme-button:hover {
+    background-color: #45a049; /* Darker green on hover */
 }
