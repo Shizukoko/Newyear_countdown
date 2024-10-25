@@ -5,14 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>New Year Countdown</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
         <h1 class="countdown-title">Countdown to New Year!</h1>
-        <p class="countdown-description">Get ready to celebrate! Only a few moments left until we ring in the new year!</p>
+        <p class="countdown-description">Time left until the New Year:</p>
         <div class="countdown">
             <div class="time">
                 <span class="number" id="days">0</span>
@@ -34,16 +32,11 @@
         <div class="progress-container">
             <div id="progress-bar"></div>
         </div>
-        <button id="theme-button" class="theme-button">Switch to Dark Mode</button>
-        <div id="greeting-message" class="greeting-message"></div>
-        <div class="quote" id="quote"></div>
-        <div class="footer">
-            <p>Stay tuned for the celebration!</p>
-        </div>
+        <button class="theme-button" id="celebrate-button">Celebrate!</button>
+        <p class="greeting-message" id="greeting-message"></p>
+        <p class="quote" id="quote"></p>
     </div>
-
-    <audio id="celebration-sound" src="celebration.mp3"></audio> <!-- Add a sound file -->
-
+    <audio id="celebration-sound" src="celebration.mp3"></audio>
     <script src="script.js"></script>
 </body>
 </html>
