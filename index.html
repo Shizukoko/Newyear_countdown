@@ -5,10 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>New Year Countdown</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
         <h1 class="countdown-title">Countdown to New Year!</h1>
+        <p class="countdown-description">Get ready to celebrate! Only a few moments left until we ring in the new year!</p>
         <div class="countdown">
             <div class="time">
                 <span class="number" id="days">0</span>
@@ -27,7 +31,19 @@
                 <span class="label">Seconds</span>
             </div>
         </div>
-        <div class="footer">Stay tuned for the celebration!</div>
+        <button id="resolution-button" class="resolution-button">Share Your Resolution!</button>
+        <div id="resolution-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <h2>Your New Year Resolution</h2>
+                <textarea id="resolution-input" placeholder="What are your resolutions for the new year?"></textarea>
+                <button id="submit-resolution">Submit</button>
+                <p id="resolution-message"></p>
+            </div>
+        </div>
+        <div class="footer">
+            <p>Stay tuned for the celebration!</p>
+        </div>
     </div>
 
     <script src="script.js"></script>
